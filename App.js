@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Button, View, Platform, Text, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import HomeScreen from './components/HomeScreen.js';
 import Admin from './components/Admin.js';
 
-const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
 
 function WebHeader({ onMenuToggle }) {
   return (
@@ -51,11 +51,11 @@ export default function App() {
           </View>
         </View>
       ) : (
-        <Stack.Navigator>
-          <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="Admin" component={Admin} />
-          {/* Other Stack Screens for mobile */}
-        </Stack.Navigator>
+        <Drawer.Navigator initialRouteName="Home">
+          <Drawer.Screen name="Home" component={HomeScreen} />
+          <Drawer.Screen name="Admin" component={Admin} />
+          {/* Other Drawer Screens for mobile */}
+        </Drawer.Navigator>
       )}
     </NavigationContainer>
   );
