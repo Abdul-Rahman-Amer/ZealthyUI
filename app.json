@@ -2,13 +2,12 @@
   "expo": {
     "name": "zealthyhealthdesk",
     "slug": "zealthyhealthdesk",
-    "description": "exercise for Zealthy",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/z.png",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/z.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,23 +15,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.rocky11229.zealthyhealthdesk"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/Z.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.rocky11229.zealthyhealthdesk"
+      }
     },
     "web": {
-      "favicon": "./assets/Z.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "3023644a-25a0-4e53-a18f-1576ccd3c979"
-      }
+      "favicon": "./assets/favicon.png"
     }
   }
 }
