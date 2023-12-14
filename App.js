@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
   header: {
     height: 60,
-    paddingHorizontal: 10,
+    paddingHorizontal: 11,
     justifyContent: 'center',
     backgroundColor: 'lightblue',
     // Add other styling for the header
